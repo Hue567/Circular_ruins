@@ -1,0 +1,37 @@
+<!DOCTYPE html> <html lang="en">
+   <head> <meta charset="utf-8">
+     <title>A card component</title> 
+     <link rel="stylesheet" href="main.css"> 
+    </head>
+     <script> 
+     const eye = document.getElementById("eye"); 
+     const hiddenBox = document.getElementById("hiddenBox");
+      eye.addEventListener("click", function() { eye.style.display = "none";
+       hiddenBox.style.display = "block"; });
+       hiddenBox.addEventListener("click", function() { hiddenBox.style.display = "none";
+        eye.style.display = "block"; }); 
+        </script> 
+        <body class="page2">
+           <h1 class="card-title">No one saw him disembark in the unanimous night, </h1> 
+           <div class="image-container"> 
+            <img src="eye.jpg" alt="Eye Image" class="eye-image" onclick="toggleBox()"> 
+            <div class="hidden-box" id="textBox">
+               <p> no one saw the bamboo canoe sink into the sacred mud,
+                 but in a few days there was no one who did not know that the taciturn 
+                 man came from the South and that his home had been one of those numberless 
+                 villages upstream in the deeply cleft side of the mountain, where the Zend language 
+                 has not been contaminated by Greek and where leprosy is infrequent. What is certain 
+                 is that the grey man kissed the mud, climbed up the bank with pushing aside (probably,
+                  without feeling) the blades which were lacerating his flesh, and crawled, nauseated and 
+                  bloodstained, up to the circular enclosure crowned with a stone tiger or horse, which
+                   sometimes was the color of flame and now was that of ashes. </p> 
+              </div> 
+             </div>
+            </body> 
+            <script> 
+            function toggleBox() { const box = document.getElementById("textBox");
+             if (box.style.display === "none" || box.style.display === "") 
+             { box.style.display = "block"; } 
+             else { box.style.display = "none"; } }
+             </script> 
+             </html>

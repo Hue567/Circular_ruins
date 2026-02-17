@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>page</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<script>
+  const mouth = document.getElementById("mouth");
+  const hiddenBox = document.getElementById("hiddenBox");
+
+  mouth.addEventListener("click", function () {
+    mouth.style.display = "none";
+    hiddenBox.style.display = "block";
+  });
+
+  hiddenBox.addEventListener("click", function () {
+    hiddenBox.style.display = "none";
+    mouth.style.display = "block";
+  });
+</script>
+
+<body class="page2">
+
+  <h1 class="card-title">He was awakened by the sun high overhead. He was not astonished to find that his wounds had healed; he closed his pallid eyes and slept, not through weakness of flesh but through determination of will. </h1>
+  <div class="image-container">
+    <img src="mouth.jpg" alt="Mouth Image" class="mouth-image" onclick="toggleBox()">
+
+    <div class="hidden-box" id="textBox">
+      <p>
+       He knew that this temple was the place required for his invincible intent; 
+       he knew that the incessant trees had not succeeded in strangling the ruins of another propitious temple
+        downstream which had once belonged to gods now burned and dead; he knew that his immediate obligation was to dream.
+         Toward midnight he was awakened by the inconsolable shriek of a bird. Tracks of bare feet, some figs 
+         and a jug warned him that the men of the region had been spying respectfully on his sleep, soliciting 
+         his protection or afraid of his magic. He felt a chill of fear, and sought out a sepulchral niche in the
+          dilapidated wall where he concealed himself among unfamiliar leaves.
+        The purpose which guided him was not impossible, though supernatural.
+         He wanted to dream a man; he wanted to dream him in minute entirety and impose him on reality. 
+         This magic project had exhausted the entire expanse of his mind; if someone had asked him his name
+          or to relate some event of his former life, he would not have been able to give an answer. 
+          This uninhabited, ruined temple suited him, for it is contained a minimum of visible world; 
+          the proximity of the workmen also suited him, for they took it upon themselves to provide for his 
+          frugal needs. The rice and fruit they brought him were nourishment enough for his body, which was
+          consecrated to the sole task of sleeping and dreaming.
+      </p>
+    </div>
+
+
+</body>
+
+<script>
+  function toggleBox() {
+    const box = document.getElementById("textBox");
+    if (box.style.display === "none" || box.style.display === "") {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+  }
+</script>

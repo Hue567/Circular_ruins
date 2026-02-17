@@ -1,0 +1,43 @@
+<!DOCTYPE html> <html lang="en">
+   <head> <meta charset="utf-8">
+     <title>page 5</title> 
+     <link rel="stylesheet" href="main.css"> 
+    </head>
+     <script> 
+     const fingers = document.getElementById("fingers"); 
+     const hiddenBox = document.getElementById("hiddenBox");
+      fingers.addEventListener("click", function() { fingers.style.display = "none";
+       hiddenBox.style.display = "block"; });
+       hiddenBox.addEventListener("click", function() { hiddenBox.style.display = "none";
+        fingers.style.display = "block"; }); 
+        </script> 
+        <body class="page2">
+           <h1 class="card-title">He tried to assemble the student body but scarcely had he articulated a few brief words of exhortation when it became deformed and was then erased. In his almost perpetual vigil, tears of anger burned his old eyes.
+
+ </h1> 
+           <div class="image-container"> 
+            <img src="fingers.jpg" alt="Fingers Image" class="fingers" onclick="toggleBox()"> 
+            <div class="hidden-box" id="textBox">
+               <p>
+                He understood that modeling the incoherent and vertiginous matter of which dreams are composed
+                 was the most difficult task that a man could undertake, even though he should penetrate all the 
+                 enigmas of a superior and inferior order; much more difficult than weaving a rope out of sand or
+                coining the faceless wind. He swore he would forget the enormous hallucination which had thrown
+                him off at first, and he sought another method of work. Before putting it into execution, he spent
+                a month recovering his strength, which had been squandered by his delirium. He abandoned all 
+                premeditation of dreaming and almost immediately succeeded in sleeping a reasonable part of each day.
+                 The few times that he had dreams during this period, he paid no attention to them. Before resuming
+                  his task, he waited until the moon's disk was perfect. Then, in the afternoon, he purified himself 
+                 in the waters of the river, worshiped the planetary gods, pronounced the prescribed syllables of a 
+                  mighty name, and went to sleep. He dreamed almost immediately, with his heart throbbing.
+                </p> 
+              </div> 
+             </div>
+            </body> 
+            <script> 
+            function toggleBox() { const box = document.getElementById("textBox");
+             if (box.style.display === "none" || box.style.display === "") 
+             { box.style.display = "block"; } 
+             else { box.style.display = "none"; } }
+             </script> 
+             </html>

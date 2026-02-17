@@ -1,0 +1,250 @@
+body {
+    background-color: #FAF9EE;
+    margin: 0;
+    padding: 0;
+}
+
+.body-chart {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: 250px;
+    position: relative;
+    z-index: 1;
+}
+
+@font-face {
+    font-family: "Fugit";
+    src: url(fonts/FugitUnlicencedTrial-Bold.ttf) format("truetype");
+}
+
+.title-container {
+    inset: 0;       
+  height: auto; 
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  right: 370px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FAF9EE;
+  font-family: "Fugit";
+  font-size: 18pt;
+  z-index: 2;
+}
+
+:root{
+  --circle-size: 750px;
+  --circle-right: 200px;
+  --circle-top: 100px;
+}
+
+.image-area{
+  position: relative;
+  height: 100vh; 
+}
+
+.orange-circle{
+  width: var(--circle-size);
+  height: var(--circle-size);
+  position: absolute;
+  right: var(--circle-right);
+  top: var(--circle-top);
+  border-radius: 50%;
+  z-index: 0;
+
+  background: radial-gradient(circle at 40% 35%,
+    #ff6a2b 0%,
+    #C7441C 45%,
+    rgba(199,68,28,0) 70%
+  );
+
+  filter: blur(10px);
+  animation: flameBlob 6s ease-in-out infinite;
+}
+
+
+.flame-arc{
+  position: absolute;
+  right: var(--circle-right);
+  top: var(--circle-top);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.flame-button{
+  --angle: 0deg;
+  --radius: 405px;
+  --size: 40px;
+  --speed: 5s;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--angle))
+    translateX(var(--radius))
+    rotate(calc(-1 * var(--angle)));
+
+  pointer-events: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.flame-button::before{
+  content:"";
+  position:absolute;
+  inset:-10px;
+  border-radius:50%;
+  background: radial-gradient(circle at 40% 35%,
+    #fff06c 0%,
+    #c79c1c 45%,
+    rgba(199, 139, 28, 0) 70%
+  );
+  filter: blur(4px);
+  opacity: 0.95;
+  animation: flameBlob var(--speed) ease-in-out infinite;
+}
+
+.flame-button:hover::before{
+  animation-duration: 1.2s;
+  opacity: 1;
+}
+
+.b1  { --angle: -70deg; --size: 26px; --radius: 390px; --speed: 6s; }
+.b2  { --angle: -55deg; --size: 30px; --radius: 395px; --speed: 5.7s; }
+.b3  { --angle: -40deg; --size: 34px; --radius: 400px; --speed: 5.4s; }
+.b4  { --angle: -25deg; --size: 38px; --radius: 405px; --speed: 5.1s; }
+.b5  { --angle: -10deg; --size: 42px; --radius: 410px; --speed: 4.8s; }
+.b6  { --angle:  10deg; --size: 46px; --radius: 410px; --speed: 4.6s; }
+.b7  { --angle:  25deg; --size: 50px; --radius: 405px; --speed: 4.3s; }
+.b8  { --angle:  40deg; --size: 54px; --radius: 400px; --speed: 4.0s; }
+.b9  { --angle:  55deg; --size: 58px; --radius: 395px; --speed: 3.7s; }
+.b10 { --angle:  70deg; --size: 62px; --radius: 390px; --speed: 3.4s; }
+
+@keyframes flameBlob {
+  0%   { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; transform: rotate(0deg) scale(1); }
+  33%  { border-radius: 55% 45% 60% 40% / 45% 60% 40% 55%; transform: rotate(8deg) scale(1.05); }
+  66%  { border-radius: 45% 55% 40% 60% / 60% 45% 55% 40%; transform: rotate(-8deg) scale(0.98); }
+  100% { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; transform: rotate(0deg) scale(1); }
+}
+
+
+.orange-circle:hover {
+  animation-duration: 2s;
+}
+
+
+.page1 {
+    background-color: #FAF9EE;
+    font-family: "Fugit";
+    position: relative;
+}
+.card-title {
+    font-size: 18pt;
+    color: #1b1a1a;
+    left: 80px;
+    top: 100px;
+    position: absolute;
+}
+.story-page{
+  background-color: #FAF9EE;
+  font-family: "Fugit";
+  position: relative;
+  min-height: 100vh;
+}
+
+
+.image-container{
+  width:200px;       
+  position: absolute;
+right: 30%;
+  top: 200px;
+
+  position: absolute;
+}
+.eye-image{
+  width: 600px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+}
+
+.eye-image:hover{
+  filter: brightness(1.2);
+  left: 300px;
+  top: 20px;
+}
+
+.reveal-image{
+  width: 200%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  position: static;
+}
+
+.mouth-image{
+ width: 600px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+}
+.mouth-image:hover{
+  filter: brightness(1.2);
+  left: 300px;
+  top: 20px;
+}
+
+.nose-image{
+ width: 500px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+}
+.nose-image:hover{
+  filter: brightness(1.2);
+  left: 300px;
+  top: 20px;
+}
+
+.hidden-box{
+  position: absolute;
+ 
+  inset: 0;
+
+  background: black;
+  color: white;
+  padding: 20px;
+  
+
+  display: none;
+  cursor: pointer;
+  
+  overflow-y: auto;        
+}
+.image-container.revealed .hidden-box{
+  display: block;
+}
+
+.image-container.revealed .reveal-image{
+  visibility: hidden;    
+}

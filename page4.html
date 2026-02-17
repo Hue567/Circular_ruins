@@ -1,0 +1,41 @@
+<!DOCTYPE html> <html lang="en">
+   <head> <meta charset="utf-8">
+     <title>page 4</title> 
+     <link rel="stylesheet" href="main.css"> 
+    </head>
+     <script> 
+     const ear = document.getElementById("ear"); 
+     const hiddenBox = document.getElementById("hiddenBox");
+      ear.addEventListener("click", function() { ear.style.display = "none";
+       hiddenBox.style.display = "block"; });
+       hiddenBox.addEventListener("click", function() { hiddenBox.style.display = "none";
+        ear.style.display = "block"; }); 
+        </script> 
+        <body class="page2">
+           <h1 class="card-title">After nine or ten nights he understood with a certain bitterness that he could expect nothing from those pupils who accepted his doctrine passively, but that he could expect something from those who occasionally dared to oppose him. </h1> 
+           <div class="image-container"> 
+            <img src="ear.jpg" alt="Ear Image" class="ear-image" onclick="toggleBox()"> 
+            <div class="hidden-box" id="textBox">
+               <p>The former group, although worthy of love and affection, could not ascend to the level of 
+                individuals; the latter pre-existed to a slightly greater degree. One afternoon (now afternoons 
+                were also given over to sleep, now he was only awake for a couple hours at daybreak) he dismissed
+                 the vast illusory student body for good and kept only one pupil. He was a taciturn, sallow boy, 
+                 at times intractable, and whose sharp features resembled of those of his dreamer. The brusque 
+                 elimination of his fellow students did not disconcert him for long; after a few private lessons,
+                 his progress was enough to astound the teacher. Nevertheless, a catastrophe took place. One day,
+                the man emerged from his sleep as if from a viscous desert, looked at the useless afternoon light
+                 which he immediately confused with the dawn, and understood that he had not dreamed. All that night 
+                and all day long, the intolerable lucidity of insomnia fell upon him. He tried exploring the forest,
+                 to lose his strength; among the hemlock he barely succeeded in experiencing several short snatchs 
+                 of sleep, veined with fleeting, rudimentary visions that were useless.
+                </p> 
+              </div> 
+             </div>
+            </body> 
+            <script> 
+            function toggleBox() { const box = document.getElementById("textBox");
+             if (box.style.display === "none" || box.style.display === "") 
+             { box.style.display = "block"; } 
+             else { box.style.display = "none"; } }
+             </script> 
+             </html>
