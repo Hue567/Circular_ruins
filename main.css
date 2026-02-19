@@ -145,7 +145,20 @@ h1 {
 .orange-circle:hover {
   animation-duration: 2s;
 }
+.home-button {
+  position: fixed;
+   bottom: 30px;
+  left: 30px;
+  z-index: 999;
+}
+.home-icon{
+   width: 70px;
+  cursor: pointer;
+}
 
+.home-icon:hover{
+  filter: brightness(1.2);
+}
 
 .page1 {
     background-color: #FAF9EE;
@@ -170,7 +183,7 @@ h1 {
 .image-container{
   width:200px;       
   position: absolute;
-right: 30%;
+  right: 30%;
   top: 200px;
 
   position: absolute;
@@ -213,8 +226,8 @@ right: 30%;
 }
 
 .nose-image{
- width: 500px;
-  height: auto;
+ width: 600px;
+  height: 600px;
   display: block;
   cursor: pointer;
   right: 20px;
@@ -225,16 +238,88 @@ right: 30%;
   left: 300px;
   top: 20px;
 }
+.ear-image{
+ width: 600px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+}
+.ear-image:hover{
+  filter: brightness(1.2);
+}
+
+.fingers-image{
+ width: 600px;
+  height: 600px;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+  object-fit: cover;
+}
+.fingers-image:hover{
+  filter: brightness(1.2);
+}
+
+.knee-image{
+ width: 600px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+}
+.knee-image:hover{
+  filter: brightness(1.2);
+}
+
+.feet-image{
+ width: 600px;
+  height: 600px;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+  object-fit: cover;
+}
+
+.feet-image:hover{
+  filter: brightness(1.2);
+}
+
+.hair-image{
+ width: 600px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+}
+.hair-image:hover{
+  filter: brightness(1.2);
+}
+.body-image{
+ width: 600px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  right: 20px;
+  position: static;
+  object-fit: cover;
+}
+.body-image:hover{
+  filter: brightness(1.2);
+}
 
 .hidden-box{
   position: absolute;
- 
+  width: 500px;
   inset: 0;
-
   background: black;
   color: white;
   padding: 20px;
-  
 
   display: none;
   cursor: pointer;

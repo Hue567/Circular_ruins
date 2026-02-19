@@ -1,0 +1,47 @@
+<!DOCTYPE html> <html lang="en">
+   <head> <meta charset="utf-8">
+     <title>page 8</title> 
+     <link rel="stylesheet" href="main.css"> 
+    </head>
+     <script> 
+     const feet = document.getElementById("feet"); 
+     const hiddenBox = document.getElementById("hiddenBox");
+      feet.addEventListener("click", function() { feet.style.display = "none";
+       hiddenBox.style.display = "block"; });
+       hiddenBox.addEventListener("click", function() { hiddenBox.style.display = "none";
+        feet.style.display = "block"; }); 
+        </script> 
+        <body class="page2">
+           <h1 class="card-title"> The wizard carried out the orders he had been given.   </h1> 
+           <div class="image-container"> 
+            <img src="feet.jpg" alt="Feet Image" class="feet-image" onclick="toggleBox()"> 
+            <div class="hidden-box" id="textBox">
+               <p>
+              He devoted a certain length of time (which finally proved to be two years) to instructing him in 
+              the mysteries of the universe and the cult of fire. Secretly, he was pained at the idea of being
+               seperated from him. On the pretext of pedagogical necessity, each day he increased the number of
+                hours dedicated to dreaming. He also remade the right shoulder, which was somewhat defective. At
+                 times, he was disturbed by the impression that all this had already happened . . . In general, 
+                 his days were happy; when he closed his eyes, he thought: Now I will be with my son. Or, more rarely: 
+                 The son I have engendered is waiting for me and will not exist if I do not go to him.
+            Gradually, he began accustoming him to reality. Once he ordered him to place a flag on a faraway peak. 
+            The next day the flag was fluttering on the peak. He tried other analogous experiments, each time more 
+            audacious. With a certain bitterness, he understood that his son was ready to be born--and perhaps impatient. 
+            That night he kissed him for the first time and sent him off to the other temple whose remains were turning
+             white downstream, across many miles of inextricable jungle and marshes. Before doing this (and so that his
+              son should never know that he was a phantom, so that he should think himself a man like any other) he destroyed
+               in him all memory of his years of apprenticeship.
+                </p> 
+              </div> 
+             </div>
+             <a href="index.html" class="home-button">
+              <img src="heart.png" class="home-icon" alt="Home">
+            </a>
+            </body> 
+            <script> 
+            function toggleBox() { const box = document.getElementById("textBox");
+             if (box.style.display === "none" || box.style.display === "") 
+             { box.style.display = "block"; } 
+             else { box.style.display = "none"; } }
+             </script> 
+             </html>

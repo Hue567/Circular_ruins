@@ -1,0 +1,46 @@
+<!DOCTYPE html> <html lang="en">
+   <head> <meta charset="utf-8">
+     <title>page 7</title> 
+     <link rel="stylesheet" href="main.css"> 
+    </head>
+     <script> 
+     const feet = document.getElementById("feet"); 
+     const hiddenBox = document.getElementById("hiddenBox");
+      feet.addEventListener("click", function() { feet.style.display = "none";
+       hiddenBox.style.display = "block"; });
+       hiddenBox.addEventListener("click", function() { hiddenBox.style.display = "none";
+        feet.style.display = "block"; }); 
+        </script> 
+        <body class="page2">
+           <h1 class="card-title">  In the Gnostic cosmosgonies, demiurges fashion a red Adam who cannot stand; as a clumsy, crude and elemental as this Adam of dust was the Adam of dreams forged by the wizard's nights.  </h1> 
+           <div class="image-container"> 
+            <img src="feet.jpg" alt="Feet Image" class="feet-image" onclick="toggleBox()"> 
+            <div class="hidden-box" id="textBox">
+               <p>
+               One afternoon, the man almost destroyed his entire work, but then changed his mind.
+                (It would have been better had he destroyed it.) When he had exhausted all supplications
+                 to the deities of earth, he threw himself at the feet of the effigy which was perhaps a tiger
+                  or perhaps a colt and implored its unknown help. That evening, at twilight, he dreamt of the 
+                statue. He dreamt it was alive, tremulous: it was not an atrocious bastard of a tiger and a colt,
+                 but at the same time these two firey creatures and also a bull, a rose, and a storm. This multiple
+                 god revealed to him that his earthly name was Fire, and that in this circular temple (and in others
+                like it) people had once made sacrifices to him and worshiped him, and that he would magically 
+                animate the dreamed phantom, in such a way that all creatures, except Fire itself and the dreamer,
+                would believe to be a man of flesh and blood. He commanded that once this man had been instructed
+                in all the rites, he should be sent to the other ruined temple whose pyramids were still standing 
+                downstream, so that some voice would glorify him in that deserted ediface. In the dream of the man 
+                that dreamed, the dreamed one awoke.
+                </p> 
+              </div> 
+             </div>
+             <a href="index.html" class="home-button">
+              <img src="heart.png" class="home-icon" alt="Home">
+            </a>
+            </body> 
+            <script> 
+            function toggleBox() { const box = document.getElementById("textBox");
+             if (box.style.display === "none" || box.style.display === "") 
+             { box.style.display = "block"; } 
+             else { box.style.display = "none"; } }
+             </script> 
+             </html>
